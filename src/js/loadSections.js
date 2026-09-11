@@ -20,5 +20,10 @@ export async function loadSections() {
         './src/pages/identity.html'
     );
 
+    await loadSection(
+        'self-discovery-container',
+        './src/pages/self-discovery.html'
+    );
+
 
 }
