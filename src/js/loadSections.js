@@ -40,5 +40,9 @@ export async function loadSections() {
         './src/pages/future.html'
     );
 
+     await loadSection(
+        'career-container',
+        './src/pages/career.html'
+    );
 
 }
