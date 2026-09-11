@@ -1,0 +1,463 @@
+.self-discovery {
+    min-height: 100vh;
+    padding: 150px 0 90px;
+    background: var(--color-surface);
+}
+
+.self-discovery-header {
+    max-width: 800px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.self-discovery-subtitle {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.self-discovery-header h1 {
+    margin-bottom: 24px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: .95;
+}
+
+.self-discovery-header h1 span {
+    color: var(--color-accent);
+}
+
+.self-discovery-header p {
+    max-width: 600px;
+    margin: auto;
+    color: var(--color-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.life-line {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.life-line-track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom,
+            transparent,
+            var(--color-accent),
+            var(--color-secondary),
+            transparent);
+    transform: translateX(-50%);
+}
+
+.life-event {
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+.life-event:last-child {
+    margin-bottom: 0;
+}
+
+.life-event-left {
+    justify-content: flex-end;
+    padding-right: 65px;
+    text-align: right;
+}
+
+.life-event-right {
+    margin-left: 50%;
+    padding-left: 65px;
+}
+
+.life-event-marker {
+    position: absolute;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-highlight);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 8px var(--color-surface);
+    z-index: 2;
+}
+
+.life-event-left .life-event-marker {
+    right: -24px;
+}
+
+.life-event-right .life-event-marker {
+    left: -24px;
+}
+
+.life-event-content {
+    max-width: 390px;
+    padding: 26px;
+    background: var(--color-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.life-event-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow);
+}
+
+.life-event-label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--color-secondary);
+    font-size: .68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.life-event-content h2 {
+    margin-bottom: 12px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.life-event-content p {
+    color: var(--color-muted);
+    font-size: .87rem;
+    line-height: 1.65;
+}
+
+.life-event-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.life-event-left .life-event-tags {
+    justify-content: flex-end;
+}
+
+.life-event-tags span {
+    padding: 5px 9px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--color-tech);
+    background: var(--color-white);
+    font-size: .63rem;
+    font-weight: 600;
+}
+
+.reflection-section {
+    max-width: 1000px;
+    margin: 100px auto 0;
+}
+
+.self-discovery-section-title {
+    max-width: 600px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.self-discovery-section-title>span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.self-discovery-section-title h2 {
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+}
+
+.self-discovery-section-title p {
+    color: var(--color-muted);
+    font-size: .9rem;
+    line-height: 1.6;
+}
+
+.reflection-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+}
+
+.reflection-card {
+    position: relative;
+    padding: 22px;
+    background: var(--color-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.reflection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.reflection-number {
+    margin-bottom: 12px;
+    color: var(--color-accent);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.reflection-card>span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-secondary);
+    font-size: .64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.reflection-card p {
+    color: var(--color-muted);
+    font-size: .8rem;
+    line-height: 1.55;
+}
+
+.reflection-card-five {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    background:
+        linear-gradient(145deg,
+            rgba(255, 235, 184, .30),
+            rgba(234, 157, 157, .16));
+}
+
+.reflection-card-five .reflection-number {
+    font-size: 2.8rem;
+}
+
+.reflection-card-five h2 {
+    max-width: 280px;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.reflection-card-five p {
+    max-width: 320px;
+}
+
+.reflection-math {
+    position: absolute;
+    right: 24px;
+    bottom: 14px;
+    color: var(--color-secondary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    opacity: .7;
+}
+
+.reflection-small-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.reflection-small-grid .reflection-card {
+    min-height: 145px;
+}
+
+.reflection-card-life {
+    grid-column: span 2;
+    min-height: 145px;
+    background:
+        linear-gradient(135deg,
+            rgba(96, 29, 73, .08),
+            rgba(234, 157, 157, .16));
+}
+
+.reflection-card-life p {
+    max-width: 700px;
+}
+
+.reflection-symbol {
+    position: absolute;
+    right: 26px;
+    bottom: 16px;
+    color: var(--color-secondary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+}
+
+.self-discovery-footer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 65px;
+    color: var(--color-muted);
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.self-discovery-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+@media (max-width: 800px) {
+    .reflection-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .reflection-card-five {
+        min-height: 250px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .self-discovery {
+        padding: 120px 0 60px;
+    }
+
+    .self-discovery-header {
+        margin-bottom: 60px;
+    }
+
+    .self-discovery-header h1 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+
+    .life-line {
+        padding-left: 30px;
+    }
+
+    .life-line-track {
+        left: 5px;
+        transform: none;
+    }
+
+    .life-event,
+    .life-event-right,
+    .life-event-left {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 35px;
+        padding: 0 0 0 35px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .life-event:last-child {
+        margin-bottom: 0;
+    }
+
+    .life-event-marker,
+    .life-event-left .life-event-marker,
+    .life-event-right .life-event-marker {
+        left: -19px;
+        right: auto;
+    }
+
+    .life-event-content {
+        max-width: none;
+        padding: 23px;
+    }
+
+    .life-event-left .life-event-tags {
+        justify-content: flex-start;
+    }
+
+
+    .reflection-section {
+        margin-top: 75px;
+    }
+
+    .self-discovery-section-title {
+        margin-bottom: 30px;
+    }
+
+    .reflection-layout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .reflection-small-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .reflection-card {
+        padding: 20px;
+    }
+
+    .reflection-card-five {
+        min-height: 230px;
+        padding: 25px;
+    }
+
+    .reflection-card-five h2 {
+        font-size: 1.8rem;
+    }
+
+    .reflection-small-grid .reflection-card {
+        min-height: auto;
+    }
+
+    .reflection-card-life {
+        grid-column: auto;
+        min-height: auto;
+    }
+
+    .reflection-math {
+        font-size: 3rem;
+    }
+
+    .reflection-symbol {
+        right: 20px;
+        bottom: 15px;
+        font-size: 2.5rem;
+    }
+
+
+    .self-discovery-footer {
+        margin-top: 50px;
+    }
+}
