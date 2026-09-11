@@ -1,0 +1,473 @@
+.discoveries {
+    min-height: 100vh;
+    padding: 150px 0 90px;
+    background: var(--color-bg);
+}
+
+.discoveries-header {
+    max-width: 800px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.discoveries-subtitle {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.discoveries-header h1 {
+    margin-bottom: 24px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    font-weight: 400;
+    line-height: .95;
+}
+
+.discoveries-header h1 span {
+    color: var(--color-accent);
+}
+
+.discoveries-header p {
+    max-width: 620px;
+    margin: auto;
+    color: var(--color-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.discoveries-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.discoveries-card {
+    position: relative;
+    min-height: 530px;
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    transition: var(--transition);
+}
+
+.discoveries-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.discoveries-card-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.discoveries-number {
+    color: var(--color-accent);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.discoveries-label {
+    color: var(--color-secondary);
+    font-size: .62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+.discoveries-skills {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 235, 184, .45),
+            rgba(234, 157, 157, .18)
+        );
+}
+
+.discoveries-development {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(140, 120, 155, .14),
+            rgba(234, 157, 157, .20)
+        );
+}
+
+.discoveries-content {
+    display: flex;
+    height: calc(100% - 60px);
+    flex-direction: column;
+}
+
+.discoveries-text {
+    position: relative;
+    z-index: 2;
+}
+
+.discoveries-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+    font-size: .65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.discoveries-text h2 {
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.35rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.discoveries-text p {
+    max-width: 430px;
+    color: var(--color-muted);
+    font-size: .76rem;
+    line-height: 1.6;
+}
+
+.discoveries-staircase {
+    position: relative;
+    flex: 1;
+    min-height: 250px;
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.discoveries-staircase::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: var(--color-primary);
+    opacity: .18;
+}
+
+.stair {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border: 1px solid rgba(96, 29, 73, .16);
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    color: var(--color-white);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .25),
+        0 -4px 12px rgba(96, 29, 73, .08);
+    transition: var(--transition);
+}
+
+.stair:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .4),
+        0 -8px 18px rgba(96, 29, 73, .15);
+}
+
+.stair span {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    font-size: .55rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.stair-1 {
+    left: 0;
+    width: 14.28%;
+    height: 42px;
+    background: #B69BBE;
+}
+
+.stair-2 {
+    left: 14.28%;
+    width: 14.28%;
+    height: 70px;
+    background: #A481A2;
+}
+
+.stair-3 {
+    left: 28.56%;
+    width: 14.28%;
+    height: 98px;
+    background: #C66A89;
+}
+
+.stair-4 {
+    left: 42.84%;
+    width: 14.28%;
+    height: 126px;
+    background: #BD5579;
+}
+
+.stair-5 {
+    left: 57.12%;
+    width: 14.28%;
+    height: 154px;
+    background: #A8446A;
+}
+
+.stair-6 {
+    left: 71.40%;
+    width: 14.28%;
+    height: 182px;
+    background: #81345D;
+}
+
+.stair-7 {
+    left: 85.68%;
+    width: 14.28%;
+    height: 210px;
+    background: var(--color-primary);
+}
+
+.discoveries-clover {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 30px auto 0;
+}
+
+.clover-leaf {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(96, 29, 73, .14);
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(255, 255, 255, .98),
+            rgba(234, 157, 157, .38)
+        );
+    box-shadow:
+        0 8px 22px rgba(96, 29, 73, .10),
+        inset 0 1px 0 rgba(255, 255, 255, .75);
+    transition: var(--transition);
+}
+
+.clover-leaf:hover {
+    scale: 1.06;
+    box-shadow:
+        0 12px 28px rgba(96, 29, 73, .16),
+        inset 0 1px 0 rgba(255, 255, 255, .85);
+}
+
+.clover-leaf span {
+    position: relative;
+    z-index: 3;
+    max-width: 72px;
+    color: var(--color-primary);
+    font-size: .62rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.clover-top {
+    top: 5px;
+    left: 71px;
+}
+
+.clover-right {
+    top: 71px;
+    right: 5px;
+}
+
+.clover-bottom {
+    bottom: 5px;
+    left: 71px;
+}
+
+.clover-left {
+    top: 71px;
+    left: 5px;
+}
+
+.clover-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--color-bg);
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-highlight);
+    font-size: .8rem;
+    box-shadow: 0 5px 15px rgba(96, 29, 73, .22);
+}
+
+.discoveries-footer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 1050px;
+    margin: 55px auto 0;
+    color: var(--color-muted);
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.discoveries-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+@media (max-width: 900px) {
+
+    .discoveries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .discoveries-card {
+        min-height: 500px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .discoveries {
+        padding: 120px 0 60px;
+    }
+
+    .discoveries-header {
+        margin-bottom: 50px;
+    }
+
+    .discoveries-header h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+    }
+
+    .discoveries-card {
+        padding: 24px;
+    }
+
+    .discoveries-text h2 {
+        font-size: 2rem;
+    }
+
+    .discoveries-staircase {
+        min-height: 190px;
+    }
+
+    .stair {
+        padding: 7px 3px;
+    }
+
+    .stair span {
+        font-size: .45rem;
+    }
+
+    .stair-1 {
+        height: 32px;
+    }
+
+    .stair-2 {
+        height: 55px;
+    }
+
+    .stair-3 {
+        height: 78px;
+    }
+
+    .stair-4 {
+        height: 101px;
+    }
+
+    .stair-5 {
+        height: 124px;
+    }
+
+    .stair-6 {
+        height: 147px;
+    }
+
+    .stair-7 {
+        height: 170px;
+    }
+
+    .discoveries-clover {
+        width: 220px;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .clover-leaf {
+        width: 92px;
+        height: 92px;
+    }
+
+    .clover-top,
+    .clover-bottom {
+        left: 64px;
+    }
+
+    .clover-right,
+    .clover-left {
+        top: 64px;
+    }
+
+    .clover-top {
+        top: 5px;
+    }
+
+    .clover-right {
+        right: 5px;
+    }
+
+    .clover-bottom {
+        bottom: 5px;
+    }
+
+    .clover-left {
+        left: 5px;
+    }
+
+    .clover-center {
+        width: 32px;
+        height: 32px;
+    }
+
+    .discoveries-footer {
+        margin-top: 45px;
+    }
+
+}

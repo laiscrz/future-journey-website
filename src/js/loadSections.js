@@ -30,6 +30,11 @@ export async function loadSections() {
         './src/pages/reflection.html'
     );
 
+    await loadSection(
+        'discoveries-container',
+        './src/pages/discoveries.html'
+    );
+
 
 
 }
