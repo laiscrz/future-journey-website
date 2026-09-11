@@ -25,5 +25,11 @@ export async function loadSections() {
         './src/pages/self-discovery.html'
     );
 
+    await loadSection(
+        'reflection-container',
+        './src/pages/reflection.html'
+    );
+
+
 
 }
