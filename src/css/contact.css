@@ -1,0 +1,99 @@
+.contact {
+    padding: 100px 0 110px;
+    background:
+        linear-gradient(135deg,
+            rgba(96, 29, 73, .97),
+            rgba(107, 88, 125, .96));
+}
+
+.contact-container {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--color-highlight);
+    font-size: .65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: var(--color-white);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    font-weight: 400;
+    line-height: .95;
+}
+
+.contact h2 span {
+    color: var(--color-highlight);
+}
+
+.contact p {
+    max-width: 540px;
+    margin: 0 auto 32px;
+    color: rgba(255, 255, 255, .72);
+    font-size: .82rem;
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    min-width: 150px;
+    padding: 13px 16px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 14px;
+    color: var(--color-white);
+    text-decoration: none;
+    background: rgba(255, 255, 255, .07);
+    transition: var(--transition);
+}
+
+.contact-links a:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 235, 184, .5);
+    background: rgba(255, 255, 255, .12);
+}
+
+.contact-links span {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.contact-links strong {
+    color: var(--color-highlight);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 80px 0 90px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    .contact-links a {
+        width: 100%;
+    }
+}
