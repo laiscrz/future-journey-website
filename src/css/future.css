@@ -1,0 +1,558 @@
+.future {
+    min-height: 100vh;
+    padding: 150px 0 90px;
+    background:
+        radial-gradient(circle at 85% 15%,
+            rgba(140, 120, 155, .14),
+            transparent 30%),
+        var(--color-bg);
+}
+
+.future-header {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.future-subtitle {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--color-secondary);
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.future-header h1 {
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: .95;
+}
+
+.future-header h1 span {
+    color: var(--color-accent);
+}
+
+.future-header p {
+    max-width: 580px;
+    margin: auto;
+    color: var(--color-muted);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+
+/* GRID */
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* CARDS */
+
+.future-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 390px;
+    padding: 26px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    transition: var(--transition);
+}
+
+.future-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.future-card-top {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 24px;
+}
+
+.future-number {
+    color: var(--color-accent);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.future-label {
+    color: var(--color-secondary);
+    font-size: .58rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+
+/* 17 */
+
+.future-plan {
+    grid-column: 1;
+    grid-row: 1;
+    background:
+        linear-gradient(145deg,
+            rgba(255, 235, 184, .48),
+            rgba(234, 157, 157, .20));
+}
+
+.future-plan-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.future-plan-intro {
+    position: relative;
+    z-index: 2;
+}
+
+.future-eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+    font-size: .6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.future-plan-intro h2,
+.future-timeline-content h2,
+.future-sermais-content h2 {
+    margin-bottom: 13px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.15rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.future-plan-intro p,
+.future-timeline-content>p {
+    max-width: 400px;
+    color: var(--color-muted);
+    font-size: .7rem;
+    line-height: 1.6;
+}
+
+.future-questions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.future-question {
+    position: relative;
+    min-height: 76px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(96, 29, 73, .10);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .55);
+    transition: var(--transition);
+}
+
+.future-question:last-child {
+    grid-column: 1 / -1;
+}
+
+.future-question:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, .8);
+}
+
+.future-question span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--color-accent);
+    font-size: .48rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.future-question strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.future-question p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: .54rem;
+    line-height: 1.35;
+}
+
+
+/* 18 */
+
+.future-timeline {
+    grid-column: 2;
+    grid-row: 1;
+    background:
+        linear-gradient(145deg,
+            rgba(140, 120, 155, .20),
+            rgba(234, 157, 157, .22));
+}
+
+.future-timeline-content {
+    position: relative;
+    z-index: 2;
+}
+
+.future-timeline-content h2 {
+    font-size: 2.1rem;
+}
+
+.future-timeline-content>p {
+    margin-bottom: 20px;
+}
+
+.future-years {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.future-years::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    bottom: 11px;
+    left: 16px;
+    width: 1px;
+    background: var(--color-secondary);
+    opacity: .25;
+}
+
+.future-year {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.future-year-marker {
+    position: relative;
+    z-index: 2;
+    width: 33px;
+    height: 33px;
+    flex: 0 0 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(96, 29, 73, .15);
+    border-radius: 50%;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: .7rem;
+}
+
+.future-year-text {
+    padding-top: 1px;
+}
+
+.future-year-text span {
+    display: block;
+    margin-bottom: 1px;
+    color: var(--color-muted);
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .9px;
+}
+
+.future-year-text strong {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--color-primary);
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.future-year-text p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: .52rem;
+    line-height: 1.35;
+}
+
+
+/* 19 */
+
+.future-sermais {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    min-height: 250px;
+    background:
+        linear-gradient(135deg,
+            rgba(96, 29, 73, .98),
+            rgba(107, 88, 125, .96));
+}
+
+.future-sermais .future-number,
+.future-sermais .future-label {
+    color: var(--color-highlight);
+}
+
+.future-sermais-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 28px;
+    align-items: center;
+    width: 100%;
+}
+
+.future-sermais-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 235, 184, .3);
+    border-radius: 50%;
+    color: var(--color-highlight);
+    font-size: 1.35rem;
+}
+
+.future-sermais-main {
+    min-width: 0;
+}
+
+.future-sermais-content .future-eyebrow {
+    color: rgba(255, 235, 184, .72);
+}
+
+.future-sermais-content h2 {
+    margin-bottom: 10px;
+    color: var(--color-white);
+    font-size: 2.35rem;
+}
+
+.future-sermais-content h2 span {
+    color: var(--color-highlight);
+}
+
+.future-sermais-content p {
+    max-width: 500px;
+    margin: 0;
+    color: rgba(255, 255, 255, .72);
+    font-size: .7rem;
+    line-height: 1.6;
+}
+
+.future-sermais-words {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.future-sermais-words span {
+    padding: 6px 11px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, .85);
+    font-size: .52rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+
+/* FOOTER */
+
+.future-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 45px auto 0;
+    color: var(--color-muted);
+    font-size: .65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.future-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .future-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+
+    .future-plan,
+    .future-timeline,
+    .future-sermais {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .future-card {
+        min-height: 390px;
+    }
+
+    .future-sermais-content {
+        grid-template-columns: auto minmax(0, 1fr);
+        max-width: 100%;
+    }
+
+    .future-sermais-words {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .future-footer {
+        max-width: 650px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .future {
+        padding: 120px 0 60px;
+    }
+
+    .future-header {
+        margin-bottom: 45px;
+    }
+
+    .future-header h1 {
+        font-size: clamp(2.6rem, 13vw, 3.8rem);
+    }
+
+    .future-header p {
+        font-size: .82rem;
+    }
+
+    .future-card {
+        min-height: 0;
+        padding: 22px;
+    }
+
+    .future-card-top {
+        margin-bottom: 20px;
+    }
+
+    .future-number {
+        font-size: 1.9rem;
+    }
+
+    .future-plan-intro h2,
+    .future-timeline-content h2,
+    .future-sermais-content h2 {
+        font-size: 1.95rem;
+    }
+
+    .future-questions {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-top: 20px;
+    }
+
+    .future-question {
+        min-height: 78px;
+        padding: 11px;
+    }
+
+    .future-question:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .future-question strong {
+        font-size: .95rem;
+    }
+
+    .future-question p {
+        font-size: .5rem;
+    }
+
+    .future-years {
+        gap: 14px;
+    }
+
+    .future-year {
+        gap: 12px;
+    }
+
+    .future-year-marker {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+    }
+
+    .future-year-text strong {
+        font-size: 1.1rem;
+    }
+
+    .future-year-text p {
+        font-size: .5rem;
+    }
+
+    .future-sermais {
+        min-height: 280px;
+    }
+
+    .future-sermais-content {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .future-sermais-symbol {
+        margin: 0 auto;
+    }
+
+    .future-sermais-content p {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .future-sermais-words {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .future-footer {
+        margin-top: 40px;
+    }
+
+}

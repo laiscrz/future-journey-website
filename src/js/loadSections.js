@@ -35,6 +35,14 @@ export async function loadSections() {
         './src/pages/discoveries.html'
     );
 
+    await loadSection(
+        'future-container',
+        './src/pages/future.html'
+    );
 
+     await loadSection(
+        'career-container',
+        './src/pages/career.html'
+    );
 
 }
